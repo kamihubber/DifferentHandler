@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Image
+    uniqueID: 800304319
+    locked: 0
+  - name: UI
+    uniqueID: 457226215
+    locked: 0
+  - name: LevelArt
+    uniqueID: 1384607315
+    locked: 0
+  - name: DiffPoint
+    uniqueID: 882194261
+    locked: 0
+  - name: gp_ui
+    uniqueID: 707474093
+    locked: 0
+  - name: leaderboard_ui
+    uniqueID: 3938533309
+    locked: 0
+  - name: shop_ui
+    uniqueID: 2345136891
+    locked: 0
+  - name: settings_ui
+    uniqueID: 272098539
+    locked: 0
+  - name: profile_ui
+    uniqueID: 3667714705
+    locked: 0
+  - name: fade_ui
+    uniqueID: 959189999
+    locked: 0
+  - name: matchmaking_ui
+    uniqueID: 1642160549
+    locked: 0
+  - name: popup_ui
+    uniqueID: 408988229
+    locked: 0
+  - name: loading_ui
+    uniqueID: 1481450893
+    locked: 0

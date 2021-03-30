@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4790ec78-2548-4a97-a4a2-16501e9bd6b3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Others/Prefabs/debugTest/ImageListItemController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Others/Plugins/TextMesh Pro/RTLTMPro/Scripts/Runtime/RTLTextMeshPro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/w/SMS/DidiNadidi/Assets/Scenes/MainMenu/Scripts/Shop/Avatar/ShopAvatarManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Others/Scenes/ImageDebug/Script/ZipManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../Project/ImageDifferencesGame/ImageDifferencesGame/Assets/Scenes/Gameplay/Scripts/Image/ImageLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Others/Plugins/TextMesh Pro/RTLTMPro/Scripts/Runtime/RTLTextMeshPro.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Point/DiffPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img0.json" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMP_Text.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/ReadOnlyDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Scenes/Gameplay/Scripts/Point/DiffPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img637345191780760201.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345204173239483.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345206194101426.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345207331435928.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345209197390551.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345210640656615.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345214095881209.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345218411407158.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345219190587172.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345223933118776.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637345225512285773.json" />
+        <option value="$PROJECT_DIR$/Assets/DebugTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img_637346596804671223.json" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMPro_UGUI_Private.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Scenes/ImageDebug/Script/DebugTool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Scenes/ImageDebug/Script/ExtractZipFile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Scenes/ImageDebug/Script/DebugToolController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Scenes/ImageDebug/Script/ZipManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Scenes/PointTool/Scripts/PointTool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/100.2-min.json" />
+        <option value="$PROJECT_DIR$/Assets/Others/Prefabs/debugTest/ImageListItemController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Prefabs/UI/Loading/Scripts/LoadingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Scenes/ImageDebug/Script/DebugToolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Scenes/Gameplay/Scripts/Point/PointParent.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1edKGNIE18OQUc6AbpiaD9BIlfY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="281" y="109" key="SettingsEditor" timestamp="1600863275744">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="281" y="109" key="SettingsEditor/0.0.1600.870@0.0.1600.870" timestamp="1600863275744" />
+    <state x="463" y="182" width="672" height="686" key="search.everywhere.popup" timestamp="1601047803548">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="444" y="174" width="672" height="658" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1599402829519" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1598895618896" />
+    <state x="463" y="182" width="672" height="686" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1601047803548" />
+  </component>
+</project>

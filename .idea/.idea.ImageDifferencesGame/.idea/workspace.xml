@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d2d9fc0f-0764-4859-a378-037b7d1dbd8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/DiffTapHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/DiffTapHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ImageDifferencesGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImageDifferencesGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ImageDifferencesGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImageDifferencesGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/IngameDebugConsole/Sprites/SlicedBackground3.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/Plugins/IngameDebugConsole/Sprites/SlicedBackground3.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/Plugins/TextMesh Pro/RTLTMPro/Scripts/Runtime/RTLTextMeshPro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/Plugins/TextMesh Pro/RTLTMPro/Scripts/Runtime/RTLTextMeshPro.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/ImageButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ImageButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Text.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Text.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ARIALN.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ARIALN.TTF.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ARIALNB.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ARIALNB.TTF.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ARIALNBI.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ARIALNBI.TTF.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ARIALNI.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ARIALNI.TTF.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/Arial.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/Arial.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ArialFont.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ArialFont.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/arial.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/arial.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/arialbd.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/arialbd.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/arialbi.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/arialbi.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ariali.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ariali.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ariblk.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Arial/ariblk.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRAN Sans Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRAN Sans Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRAN Sans.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRAN Sans.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRANSansMobile Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRANSansMobile Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRANSansMobile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRANSansMobile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRANSansMobile.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRANSansMobile.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRANSansMobileBold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/IRANSansMobileBold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Lalezar.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Lalezar.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Lalezar.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Lalezar.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Mah.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Mah.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Mah.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/Mah.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui Numbers SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui Numbers SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui RTL Fixed SDF.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui RTL Fixed SDF.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui RTL Glow SDF.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui RTL Glow SDF.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui RTL Outline SDF.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui RTL Outline SDF.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui RTL SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui RTL SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui Tashkil SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui Tashkil SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Fonts/segoeui.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Ranges.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Ranges/LetterRanges.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Ranges/LetterRanges.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Ranges/NumberRanges.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Ranges/NumberRanges.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Ranges/TashkilRanges.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Ranges/TashkilRanges.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF Fixed.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF Fixed.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF Overlay Fixed.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF Overlay Fixed.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Mobile Fixed.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Mobile Fixed.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Mobile Masking Fixed.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Mobile Masking Fixed.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Mobile Overlay Fixed.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Mobile Overlay Fixed.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Surface Fixed.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Surface Fixed.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Surface-Mobile Fixed.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMP_SDF-Surface-Mobile Fixed.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMPro.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMPro.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMPro_Properties.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMPro_Properties.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMPro_Surface.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMPro_Surface.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMPro_SurfaceOutline.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Shaders/TMPro_SurfaceOutline.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Sprites/Github.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Sprites/Github.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Sprites/Github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Resources/Sprites/Github.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Arabic Tashkeel.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Arabic Tashkeel.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/AutoSize.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/AutoSize.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Button.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Button.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Dropdown.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Dropdown.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/English Multiline.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/English Multiline.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Fix Tag Test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Fix Tag Test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/InputField.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/InputField.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Manual NewLine.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Manual NewLine.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Multi-Language.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Multi-Language.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Multiline.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Multiline.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Numbers.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Numbers.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Outline&amp;Glow.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Outline&amp;Glow.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Rich Text 2.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Rich Text 2.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Rich Text 3.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Rich Text 3.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Rich Text.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Rich Text.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Simple Test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/Simple Test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/ZeroWidthNoJoiner.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scenes/ZeroWidthNoJoiner.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scripts/Editor/RTLTMPro-Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scripts/Editor/RTLTMPro-Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scripts/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scripts/Runtime/RTLTMPro.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTLTMPro/Scripts/Runtime/RTLTMPro.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/Gameplay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/GameplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/GameplayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DiffTapHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DiffTapHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/00_Element_Common/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/00_Element_TopBar/status_gage_common.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/00_Element_TopBar/status_gage_common.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/01_Title/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/02_Login/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/02_Login/txt_input_f.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/02_Login/txt_input_f.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/03_Stage/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/04_Stage_start/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/04_Stage_start/label_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/04_Stage_start/label_blue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/05_Complete/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/06_Level_Up/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/06_Level_Up/levelup_item_frame.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/06_Level_Up/levelup_item_frame.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/mission_bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/mission_bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/mission_progress_bar_complete.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/mission_progress_bar_complete.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/mission_progress_bar_ing.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/mission_progress_bar_ing.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/mission_progress_bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/07_Mission/mission_progress_bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/08_Shop/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/11_Item/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/12_Message/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/13_Setting/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/14_Pause/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/15_Ranking/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/16_Icons/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/control_bar_bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/control_bar_bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/status_bar_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/status_bar_blue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/status_bar_purple.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/status_bar_purple.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/status_bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/status_bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/status_bg_backward.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/status_bg_backward.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/switch_off.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/switch_off.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/switch_off_bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/switch_off_bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/switch_on.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/17_Components/switch_on.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/18_Action_Text/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/19_Function_Button/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/20_Popup/Thumbs.db.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/20_Popup/popup_bg_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/20_Popup/popup_bg_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/_Screen_Use_img_/08_Shop/btn_common_yellow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/_Screen_Use_img_/08_Shop/btn_common_yellow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/_Screen_Use_img_/12_Message/btn_common_gray.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/_Screen_Use_img_/12_Message/btn_common_gray.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/_Screen_Use_img_/15_Ranking/popup_list_bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/_Screen_Use_img_/15_Ranking/popup_list_bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/_PNG/_Screen_Use_img_/20_Popup/btn_common_red.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/images/_PNG/_Screen_Use_img_/20_Popup/btn_common_red.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/circle_stroke.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/circle_stroke.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/diff_sample.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/diff_sample.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images/Image1A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images/Image1A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images/Image1B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images/Image1B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images/Image2A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images/Image2A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images/Image2B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/images/Image2B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/Utils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/UI/Canvas/Canvas_Catch_Camera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/w/SMS/DidiNadidi/Assets/Prefabs/Popup/Popup/Scripts/PopupManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/MatchMaking/MatchMakingHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Others/PlayFab/PlayFab_Recipes/ProgressiveRewards/Scripts/ProgressiveRewards.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/Camera/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Ui/ToastHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@3.2.2/Runtime/UpdateBoundsJob.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Others/Plugins/TextMesh Pro/RTLTMPro/Scripts/Runtime/RTLTextMeshPro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/PointTool/Scripts/PointTool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/GameplayManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Leaderboard/Scripts/LeaderboardRow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Shop/Scripts/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/json/img0.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../DidiNadidi/DidiNadidi/Assets/Scenes/MainMenu/Scripts/Shop/Avatar/ShopAvatarManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/LevelPrefab/Scripts/LevelPrefabHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Others/PlayFab/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Others/PlayFab/PlayFabEditorExtensions/Editor/PlayFabEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Settings/SettingsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Buttons/BtnVideoAd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Buttons/HelpButtonHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Point/PointParent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Profile/Scripts/AvatarListHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/w/SMS/DidiNadidi/Assets/Scenes/MainMenu/Items/Shop/Scripts/ShopManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Point/DiffPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Profile/Scripts/AvatarItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/Security/ZPlayerPrefsInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Startup/Scripts/StartupManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Startup/Scripts/Progressbar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/WrongPointHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Popup/PopupManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/LeaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Profile/Scripts/AvatarManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Others/Plugins/Boomlagoon/JSON/JSONObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/UI/Loading/Scripts/LoadingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/w/SMS/DidiNadidi/Assets/Scenes/MainMenu/Items/Shop/Prefabs/AvatarItemManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/AI/OpponentAi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Ui_Animation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/Profile/ProfileNameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/w/SMS/DidiNadidi/Assets/Scenes/MainMenu/Scripts/Shop/Avatar/ShopAvatarManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/DontDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/StateChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../DidiNadidi/DidiNadidi/Assets/Prefabs/Popup/Popup/Scripts/PopupLoadingManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../DidiNadidi/DidiNadidi/Assets/Prefabs/Popup/Popup/Scripts/PopupManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DefaultSceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/LevelsPoolManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/DiffTapHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/Buttons/BtnCoin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/EndGameManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/DiffPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/HelpButton.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMPro_UGUI_Private.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img1.json" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Startup/PlayfabLogin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Startup/Scripts/PlayfabLogin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/Leaderboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Utils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/MoveByDrag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ui_Animation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/DontDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/HelpButtonHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Ui/ToastHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/AI/OpponentAi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Buttons/BtnVideoAd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/Buttons/BtnCoin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Prefabs/UI/Loading/Scripts/LoadingManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Leaderboard/Scripts/LeaderboardRow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Startup/Scripts/Progressbar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/UI/Canvas/Canvas_Catch_Camera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Others/Plugins/TextMesh Pro/RTLTMPro/Scripts/Runtime/RTLTextMeshPro.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Popup/PopupManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/ShopManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/StateChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Profile/Scripts/AvatarListHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Profile/Scripts/AvatarItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Profile/Scripts/AvatarManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/Profile/ProfileNameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Settings/SettingsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/WrongPointHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Buttons/HelpButtonHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/Shop/Scripts/ShopManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/MatchMaking/MatchMakingHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/EndGameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/LeaderboardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DefaultSceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/Camera/CameraManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Prefabs/LevelPrefab/Scripts/LevelPrefabHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/LevelsPoolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/Scripts/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Startup/Scripts/StartupManager.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMP_Text.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img3.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img4.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img0.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/json/img2.json" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/PointTool/Scripts/PointTool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/GameplayManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Point/PointParent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gameplay/Scripts/Point/DiffPoint.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dMVvzaazmyKPyx7eEdOMtQblfJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="25" y="381" width="1200" height="561" key="VCS.FileHistoryDialog" timestamp="1592344467003">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="25" y="381" width="1200" height="561" key="VCS.FileHistoryDialog/0.0.1600.860@0.0.1600.860" timestamp="1592344467003" />
+    <state x="465" y="142" width="672" height="678" key="search.everywhere.popup" timestamp="1594639955927">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="465" y="142" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1594639955927" />
+  </component>
+</project>
