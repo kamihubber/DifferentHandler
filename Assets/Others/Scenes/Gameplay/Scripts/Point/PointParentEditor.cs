@@ -20,7 +20,7 @@ namespace Assets.Others.Scenes.Gameplay.Scripts.Point
         SerializedProperty m_difficulty;
 
         private void OnEnable()
-        {
+        {            
             m_difficulty = this.serializedObject.FindProperty("Difficulty");
         }
 

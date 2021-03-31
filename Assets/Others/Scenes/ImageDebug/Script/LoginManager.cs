@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-using GolbaharApiClient;
+using GolbaharSandBoxApiClient;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using UnityEngine.SceneManagement;
@@ -24,7 +24,7 @@ namespace Assets.Others.Scenes.ImageDebug.Script
         //string serverpath = "https://find-differences.ir/golbaharapi/";
 
         //GolbaharSandBoxApiClient.Login golbahar_login = new GolbaharSandBoxApiClient.Login();
-        GolbaharApiClient.Login golbahar_login = new GolbaharApiClient.Login();
+        Login golbahar_login = new Login();
         private async void Start()
         {
             DateTime TokenExpireDate;

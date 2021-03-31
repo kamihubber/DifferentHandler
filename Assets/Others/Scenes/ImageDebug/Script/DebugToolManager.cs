@@ -11,9 +11,9 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 using Assets.Helpers;
-using GolbaharApiClient;
+using GolbaharSandBoxApiClient;
 using System.Threading.Tasks;
-using static GolbaharApiClient.ImageEdit;
+using static GolbaharSandBoxApiClient.ImageEdit;
 
 public class DebugToolManager : MonoBehaviour
 {
