@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Others/Scenes/ImageDebug/ImageDebug.unity
     guid: 4e73c470af9b47442ac28409b86dfc1c
+  - enabled: 0
+    path: Assets/Others/Scenes/ImageDebug/DifferentHandlerLoginPage.unity
+    guid: c5072919d71b5a34da733a01e80cd260
+  - enabled: 1
+    path: Assets/DifferentHandler.unity
+    guid: 43b9470cbb17edf45a82a9b17d14bd6c
   m_configObjects: {}

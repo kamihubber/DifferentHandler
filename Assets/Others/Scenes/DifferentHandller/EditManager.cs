@@ -11,7 +11,8 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 using GolbaharSandBoxApiClient;
-
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Assets.Others.Scenes.DifferentHandller
 {
@@ -44,9 +45,11 @@ namespace Assets.Others.Scenes.DifferentHandller
 
         List<string> jsonsId = new List<string>();
         List<JSONObject> jsons = new List<JSONObject>();
+
+        ImageEdit sandbox_webapi_imagedit = new ImageEdit();
         
 
-        private void Start()
+        private async  void Start()
         {
             jsonDirectory = Application.persistentDataPath + "/jsons";
             jsonZipPath = Application.persistentDataPath + "/jsons.zip";
@@ -63,10 +66,8 @@ namespace Assets.Others.Scenes.DifferentHandller
                     LoadingManager.getInstance.hide();
 
                     if (string.IsNullOrEmpty(image_jsons_tring))
-                    {
-                        loadJsons();
-                        //StartCoroutine(ExtractZipFile(System.IO.File.ReadAllBytes(jsonZipPath), jsonDirectory + "/"));
-                        addpoints(getimagejson(Points.filename + Points.filetype.Replace("." + Points.filetype.Split('.')[Points.filetype.Split('.').Length - 1], "")));
+                    {                        
+                        addpoints(await getimagejson(Points.filename + Points.filetype.Replace("." + Points.filetype.Split('.')[Points.filetype.Split('.').Length - 1], "")));
                     }
                     else
                     {
@@ -226,19 +227,24 @@ namespace Assets.Others.Scenes.DifferentHandller
             jsonsId.Sort();
             saveJsons();
 
-            if (Points.edit) addpoints(getimagejson(Points.filename + Points.filetype.Replace("." + Points.filetype.Split('.')[Points.filetype.Split('.').Length - 1],"") ) );
+            //if (Points.edit) addpoints(getimagejson(Points.filename + Points.filetype.Replace("." + Points.filetype.Split('.')[Points.filetype.Split('.').Length - 1],"") ) );
 
             LoadingManager.getInstance.hide();
 
         }
 
-        JSONObject getimagejson(string imagename)
+        async Task<JSONObject> getimagejson(string imagename)
         {
-            var result = jsons.Find(jso => jso.GetString("id") == imagename);
+            JSONObject result = new JSONObject();
 
-            if (result != null) return result;
+            var get_image_result = await sandbox_webapi_imagedit.GetEditImageJson(imagename, PlayerPrefs.GetString("Token"));
+
+            if (get_image_result.Status == "Success")
+            {
+                result = JSONObject.Parse(get_image_result.Value);
+            }                        
             
-            return new JSONObject();
+            return result;
         }
         
         void addpoints(JSONObject json)

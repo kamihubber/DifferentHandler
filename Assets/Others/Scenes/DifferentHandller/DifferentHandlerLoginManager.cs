@@ -9,9 +9,9 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using UnityEngine.SceneManagement;
 
-namespace Assets.Others.Scenes.ImageDebug.Script
+namespace Assets.Others.Scenes.DifferentHandller
 {
-    public class LoginManager : MonoBehaviour
+    public class DifferentHandlerLoginManager : MonoBehaviour
     {
 
         [Header("UI")]
@@ -42,7 +42,7 @@ namespace Assets.Others.Scenes.ImageDebug.Script
                         //if (await golbaharsandbox_login.CheckToken(PlayerPrefs.GetString("Token")))
                         {
                             //goto next sence
-                            SceneManager.LoadSceneAsync("ImageDebug");
+                            SceneManager.LoadSceneAsync("DifferentHandler");
                         }
                         else
                         {
@@ -57,7 +57,7 @@ namespace Assets.Others.Scenes.ImageDebug.Script
                                 PlayerPrefs.Save();
 
                                 //goto next sence
-                                SceneManager.LoadSceneAsync("ImageDebug");
+                                SceneManager.LoadSceneAsync("DifferentHandler");
 
                             }
                             //if it fails too then show user pass panel
@@ -85,7 +85,7 @@ namespace Assets.Others.Scenes.ImageDebug.Script
                             PlayerPrefs.Save();
 
                             //goto next sence
-                            SceneManager.LoadSceneAsync("ImageDebug");
+                            SceneManager.LoadSceneAsync("DifferentHandler");
                         }
                         //if it fails too then show user pass panel
                         else
@@ -118,7 +118,7 @@ namespace Assets.Others.Scenes.ImageDebug.Script
                 PlayerPrefs.SetString("TokenExpireDate", loginwithcredentials_result.expires);
                 PlayerPrefs.Save();
 
-                SceneManager.LoadSceneAsync("ImageDebug");
+                SceneManager.LoadSceneAsync("DifferentHandler");
             }
             else
             {
