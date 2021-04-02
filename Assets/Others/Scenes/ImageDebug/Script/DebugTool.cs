@@ -129,7 +129,7 @@ public class DebugTool : MonoBehaviour
                                     //pending state
                                     if (state == 0)
                                     {
-                                        string imageUrl = url.Replace("json/", "") + json.GetString("image-url");
+                                        string imageUrl = url.Replace("json/", "") + json.GetString("image_url");
                                         GameObject img = Instantiate(imagesItemPrefab);
                                         img.transform.parent = imagesContent;
                                         img.transform.localScale = new Vector3(1, 1, 1);
@@ -258,12 +258,12 @@ public class DebugTool : MonoBehaviour
     {
         string details = "";
         details += "آی دی : " + imageJson.GetString("id") + "\n";
-        details += "آدرس تصویر : " + imageJson.GetString("image-url") + "\n";
-        details += "سختی تصویر : " + imageJson.GetNumber("image-difficulty") + "/100" + "\n";
+        details += "آدرس تصویر : " + imageJson.GetString("image_url") + "\n";
+        details += "سختی تصویر : " + imageJson.GetNumber("image_difficulty") + "/100" + "\n";
 
         //tags
         string tags = "";
-        JSONArray tagsArray = imageJson.GetArray("image-tags");
+        JSONArray tagsArray = imageJson.GetArray("image_tags");
         for (int i = 0; i < tagsArray.Length; i++)
         {
             tags += tagsArray[i].Obj.GetString("tag");
@@ -275,10 +275,10 @@ public class DebugTool : MonoBehaviour
 
         details += "تگ : " + tags + "\n";
 
-        DateTime dt = DateTime.Parse(imageJson.GetString("creation-datetime"));
+        DateTime dt = DateTime.Parse(imageJson.GetString("creation_datetime"));
 
         details += "زمان ساخت : " + dt.ToString("G") + "\n";
-        details += "تعداد اختلافات : " + imageJson.GetNumber("points-count") + "\n";
+        details += "تعداد اختلافات : " + imageJson.GetNumber("points_count") + "\n";
 
         detailsText.text = details;
 

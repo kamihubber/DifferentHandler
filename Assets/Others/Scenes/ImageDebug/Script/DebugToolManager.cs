@@ -65,7 +65,7 @@ public class DebugToolManager : MonoBehaviour
                             keyvalue = new KeyValuePair<int, int>(-1, jsons.FindAll(jsnobj => jsnobj == jsnobj).Count);
                         }
                         //images with this much differences count
-                        else keyvalue = new KeyValuePair<int, int>(j - 1 + 5, jsons.FindAll(jsnobj => (int)(jsnobj.GetNumber("points-count")) == j - 1 + 5).Count);
+                        else keyvalue = new KeyValuePair<int, int>(j - 1 + 5, jsons.FindAll(jsnobj => (int)(jsnobj.GetNumber("points_count")) == j - 1 + 5).Count);
 
                     }
                     //this state
@@ -77,7 +77,7 @@ public class DebugToolManager : MonoBehaviour
                             keyvalue = new KeyValuePair<int, int>(-1, jsons.FindAll(jsnobj => (int)(jsnobj.GetNumber("state")) == i).Count);
                         }
                         //images with this state and differences count
-                        else keyvalue = new KeyValuePair<int, int>(j - 1 + 5, jsons.FindAll(jsnobj => (int)(jsnobj.GetNumber("state")) == i && (int)(jsnobj.GetNumber("points-count")) == j - 1 + 5).Count);
+                        else keyvalue = new KeyValuePair<int, int>(j - 1 + 5, jsons.FindAll(jsnobj => (int)(jsnobj.GetNumber("state")) == i && (int)(jsnobj.GetNumber("points_count")) == j - 1 + 5).Count);
                     }
 
 
@@ -357,7 +357,7 @@ public class DebugToolManager : MonoBehaviour
 
                 index++;
 
-                addNewImage(imageHostUrl + json.GetString("image-url"), json);
+                addNewImage(imageHostUrl + json.GetString("image_url"), json);
 
             }
 
@@ -517,7 +517,7 @@ public class DebugToolManager : MonoBehaviour
         var current_state_images_count = 0;
 
         //sort by image difficulty if sorttype is zero,else use default sorting
-        if (SortType == 0) jsons.Sort((JSONObject jsn1, JSONObject jsn2) => jsn1.GetNumber("image-difficulty").CompareTo(jsn2.GetNumber("image-difficulty")));
+        if (SortType == 0) jsons.Sort((JSONObject jsn1, JSONObject jsn2) => jsn1.GetNumber("image_difficulty").CompareTo(jsn2.GetNumber("image_difficulty")));
         else jsons.Sort((JSONObject jsn1, JSONObject jsn2) => jsn1.GetString("id").CompareTo(jsn2.GetString("id")));
 
         for (var i = 0; i < 1; i++)
@@ -544,7 +544,7 @@ public class DebugToolManager : MonoBehaviour
 
                             imagesCount++;
                             current_state_images_count++;
-                            addNewImage(imageHostUrl + json.GetString("image-url"), json);
+                            addNewImage(imageHostUrl + json.GetString("image_url"), json);
                             //if (imagesCount == 36) break;
                             //
                         }
@@ -552,7 +552,7 @@ public class DebugToolManager : MonoBehaviour
                     }
                     else
                     {
-                        if ((((int)json.GetNumber("state") == CurrentState) || (CurrentState == -1)) && ((int)json.GetNumber("points-count") == CurrentDiffsCountRequested))
+                        if ((((int)json.GetNumber("state") == CurrentState) || (CurrentState == -1)) && ((int)json.GetNumber("points_count") == CurrentDiffsCountRequested))
                         {
 
 
@@ -566,7 +566,7 @@ public class DebugToolManager : MonoBehaviour
 
                             imagesCount++;
                             current_state_images_count++;
-                            addNewImage(imageHostUrl + json.GetString("image-url"), json);
+                            addNewImage(imageHostUrl + json.GetString("image_url"), json);
                             //if (imagesCount == 36) break;
                             //
                         }
@@ -707,7 +707,7 @@ public class DebugToolManager : MonoBehaviour
                 img.transform.GetChild(0).gameObject.SetActive(false);
                 img.GetComponent<ImageListItemController>().imageJsonString = json.ToString();
                 img.GetComponent<ImageListItemController>().idText.text = json.GetString("id");
-                img.GetComponent<ImageListItemController>().imageText.text = json.GetString("image-url");
+                img.GetComponent<ImageListItemController>().imageText.text = json.GetString("image_url");
 
                 downloadedImagesCount++;
 
@@ -780,7 +780,7 @@ public class DebugToolManager : MonoBehaviour
 
         //set id and difficulty
         txtImageId.text = "Id : " + imageJson.GetString("id");
-        txtImageDifficulty.text = "Difficulty : " + (int)imageJson.GetNumber("image-difficulty");
+        txtImageDifficulty.text = "Difficulty : " + (int)imageJson.GetNumber("image_difficulty");
 
         Debug.Log(json);
 
@@ -907,15 +907,15 @@ public class DebugToolManager : MonoBehaviour
     {
         string details = "";
         details += "آی دی : " + imageJson.GetString("id") + "\n";
-        details += "آدرس تصویر : " + imageJson.GetString("image-url") + "\n";
-        details += "سختی تصویر : " + imageJson.GetNumber("image-difficulty") + "/100" + "\n";
+        details += "آدرس تصویر : " + imageJson.GetString("image_url") + "\n";
+        details += "سختی تصویر : " + imageJson.GetNumber("image_difficulty") + "/100" + "\n";
 
         //tags
         string tags = "";
 
         if (database)
         {
-            var tag_list_string_value = imageJson.GetValue("image-tags").ToString();
+            var tag_list_string_value = imageJson.GetValue("image_tags").ToString();
             if (!string.IsNullOrEmpty(tag_list_string_value))
             {
                 tag_list_string_value = tag_list_string_value.ToString().Replace("[","").Replace("]","").Replace("\"","");
@@ -926,7 +926,7 @@ public class DebugToolManager : MonoBehaviour
         }
         else
         {
-            JSONArray tagsArray = imageJson.GetArray("image-tags");
+            JSONArray tagsArray = imageJson.GetArray("image_tags");
             for (int i = 0; i < tagsArray.Length; i++)
             {
                 tags += tagsArray[i].Obj.GetString("tag");
@@ -939,10 +939,10 @@ public class DebugToolManager : MonoBehaviour
 
         details += "تگ : " + tags + "\n";
 
-        DateTime dt = DateTime.Parse(imageJson.GetString("creation-datetime"));
+        DateTime dt = DateTime.Parse(imageJson.GetString("creation_datetime"));
 
         details += "زمان ساخت : " + dt.ToString("G") + "\n";
-        details += "تعداد اختلافات : " + imageJson.GetNumber("points-count") + "\n";
+        details += "تعداد اختلافات : " + imageJson.GetNumber("points_count") + "\n";
 
         detailsText.text = details;
 

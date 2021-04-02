@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Boomlagoon.JSON;
+using GolbaharSandBoxApiClient;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -27,6 +28,8 @@ public class PointTool : MonoBehaviour
     private List<PointParent> Points = new List<PointParent>();
     private int jsonCount = 0;
     private string finalurl;
+
+    ImageEdit WebApi_ImageEdit = new ImageEdit();
 
     private void Awake()
     {
@@ -141,7 +144,7 @@ public class PointTool : MonoBehaviour
 
         //pointJson.Add("img", AssetDatabase.GetAssetPath(image.sprite).Replace("Assets/Resources/", ""));
 
-        pointJson.Add("image-url", finalurl.Replace(hostUrl, ""));
+        pointJson.Add("image_url", finalurl.Replace(hostUrl, ""));
 
         JSONArray pointsArray = new JSONArray();
 
@@ -207,19 +210,20 @@ public class PointTool : MonoBehaviour
         JSONArray tagsArray = new JSONArray();
         foreach (string tag in tags)
         {
-            JSONObject tagJson = new JSONObject();
-            tagJson.Add("tag", tag);
-            tagsArray.Add(tagJson);
-        }
+            //JSONObject tagJson = new JSONObject();
+            //tagJson.Add("tag", tag);
+            //tagsArray.Add(tagJson);
+            tagsArray.Add(tag);
+        }        
 
-        pointJson.Add("image-difficulty", pointsDifficulty);
-        pointJson.Add("image-tags", tagsArray);
+        pointJson.Add("image_difficulty", pointsDifficulty);
+        pointJson.Add("image_tags", tagsArray);
         pointJson.Add("points", pointsArray);
-        pointJson.Add("points-count", pointsArray.Length);
+        pointJson.Add("points_count", pointsArray.Length);
 
 
-        if (!edit) pointJson.Add("creation-datetime", DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"));
-        else pointJson.Add("creation-datetime", editJsn.GetString("creation-datetime"));
+        if (!edit) pointJson.Add("creation_datetime", DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"));
+        else pointJson.Add("creation_datetime", editJsn.GetString("creation_datetime"));
 
         Debug.Log(pointJson);
 
@@ -227,12 +231,13 @@ public class PointTool : MonoBehaviour
 #endif
     }
 
-    public void SaveJson(string json)
+    public async void SaveJson(string json)
     {
 #if UNITY_EDITOR
         string path = null;
         //path = "Assets/Resources/json/" + DateTime.Now.ToString("yyMMddHHmmss") + ".json";
         path = "Assets/Resources/json/" + name + ".json";
+
         using (FileStream fs = new FileStream(path, FileMode.Create))
         {
             using (StreamWriter writer = new StreamWriter(fs))
@@ -241,15 +246,29 @@ public class PointTool : MonoBehaviour
             }
         }
 
-        UnityEditor.AssetDatabase.Refresh();
+        loadingUi.SetActive(true);
+        loadingUi.transform.Find("ResultMessage").GetComponent<RTLTMPro.RTLTextMeshPro>().text = "Updating";
+        var updateresult = await WebApi_ImageEdit.UpdateImageJson(json,PlayerPrefs.GetString("Token"));
 
-        UnityEngine.Object obj = AssetDatabase.LoadAssetAtPath(path, typeof(UnityEngine.Object));
+        if (updateresult.Status == "Success")
+        {
+            UnityEditor.AssetDatabase.Refresh();
 
-        Selection.activeObject = obj;
+            UnityEngine.Object obj = AssetDatabase.LoadAssetAtPath(path, typeof(UnityEngine.Object));
 
-        EditorGUIUtility.PingObject(obj);
+            Selection.activeObject = obj;
 
-        EditorApplication.ExecuteMenuItem("Edit/Play");
+            EditorGUIUtility.PingObject(obj);
+
+            EditorApplication.ExecuteMenuItem("Edit/Play");
+        }
+        else
+        {
+            loadingUi.SetActive(true);
+            loadingUi.transform.Find("ResultMessage").GetComponent<RTLTMPro.RTLTextMeshPro>().text = updateresult.Message;
+        }
+
+        
 #endif
     }
 
@@ -315,12 +334,12 @@ public class PointTool : MonoBehaviour
             //base json to edit
             editJsn = Json;
 
-            //add tags
-            JSONArray _tags = Json.GetArray("image-tags");
+            //add tags            
+            JSONArray _tags = Json.GetValue("image_tags").Array; 
             tags.Clear();
-            for (int i = 0; i < _tags.Length; i++)
+            foreach(JSONValue jv in _tags)
             {
-                tags.Add(_tags[i].Obj.GetString("tag"));
+                tags.Add(jv.Str);
             }
 
             //generate points           

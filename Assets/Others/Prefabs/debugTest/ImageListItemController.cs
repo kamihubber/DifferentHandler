@@ -52,7 +52,7 @@ public class ImageListItemController : MonoBehaviour
                     gameObject.transform.GetChild(0).gameObject.SetActive(false);
                     gameObject.GetComponent<ImageListItemController>().imageJsonString = Json.ToString();
                     gameObject.GetComponent<ImageListItemController>().idText.text = Json.GetString("id");
-                    gameObject.GetComponent<ImageListItemController>().imageText.text = Json.GetString("image-url");
+                    gameObject.GetComponent<ImageListItemController>().imageText.text = Json.GetString("image_url");
 
                     DebugToolManager.getInstance.downloadedImagesCount++;
 
@@ -96,7 +96,7 @@ public class ImageListItemController : MonoBehaviour
                     gameObject.transform.GetChild(0).gameObject.SetActive(false);
                     gameObject.GetComponent<ImageListItemController>().imageJsonString = json.ToString();
                     gameObject.GetComponent<ImageListItemController>().idText.text = json.GetString("id");
-                    gameObject.GetComponent<ImageListItemController>().imageText.text = json.GetString("image-url");
+                    gameObject.GetComponent<ImageListItemController>().imageText.text = json.GetString("image_url");
 
                     DebugToolManager.getInstance.downloadedImagesCount++;
 
