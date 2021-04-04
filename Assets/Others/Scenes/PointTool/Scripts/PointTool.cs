@@ -19,10 +19,11 @@ public class PointTool : MonoBehaviour
     public List<string> tags = new List<string>();
     [Header("Edit")]
     public bool edit = false;
-    public bool refreshJsons = false;
+    //public bool refreshJsons = false;
     [Header("Ui")] public SpriteRenderer image;
     public GameObject saveUi;
     public GameObject loadingUi;
+    public GameObject CurrentModeLabel;
 
 
     private List<PointParent> Points = new List<PointParent>();
@@ -151,6 +152,7 @@ public class PointTool : MonoBehaviour
 
         int pointsDifficulty = 0;
         int id = 0;
+        Points.Clear();
         Points.AddRange( FindObjectsOfType<PointParent>() );
         Points.Reverse();
         foreach (PointParent point in Points)
@@ -248,7 +250,8 @@ public class PointTool : MonoBehaviour
 
         loadingUi.SetActive(true);
         loadingUi.transform.Find("ResultMessage").GetComponent<RTLTMPro.RTLTextMeshPro>().text = "Updating";
-        var updateresult = await WebApi_ImageEdit.UpdateImageJson(json,PlayerPrefs.GetString("Token"));
+        var updateresult = edit ? await WebApi_ImageEdit.UpdateImageJson(json,PlayerPrefs.GetString("Token")) 
+            : await WebApi_ImageEdit.InsertImageJson(json, PlayerPrefs.GetString("Token"));
 
         if (updateresult.Status == "Success")
         {
@@ -292,10 +295,15 @@ public class PointTool : MonoBehaviour
             pp.HideOtherPoints = HideOthers;
 
         //Debug.Log("");
+
+        if (edit)
+            CurrentModeLabel.GetComponent<RTLTMPro.RTLTextMeshPro>().text = "حالت : ویرایش";
+        else
+            CurrentModeLabel.GetComponent<RTLTMPro.RTLTextMeshPro>().text = "حالت : جدید";
     }
 
     private void Update()
-    {
+    {        
         if (image.sprite != null)
         {
             if (image.sprite.name != previousimagename)
@@ -336,7 +344,7 @@ public class PointTool : MonoBehaviour
 
             //add tags            
             JSONArray _tags = Json.GetValue("image_tags").Array; 
-            tags.Clear();
+            //tags.Clear();
             foreach(JSONValue jv in _tags)
             {
                 tags.Add(jv.Str);

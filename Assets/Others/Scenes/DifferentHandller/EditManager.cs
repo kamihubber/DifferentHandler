@@ -62,7 +62,7 @@ namespace Assets.Others.Scenes.DifferentHandller
 
                 if (string.IsNullOrEmpty(image_jsons_tring))
                 {
-                    addpoints(await getimagejson(Points.filename + Points.filetype.Replace("." + Points.filetype.Split('.')[Points.filetype.Split('.').Length - 1], "")));
+                    addpoints(await getimagejson(Points.filename + Points.filetype.Replace("." + Points.filetype.Split('.')[Points.filetype.Split('.').Length - 1], "")));                    
                 }
                 else
                 {
@@ -103,7 +103,12 @@ namespace Assets.Others.Scenes.DifferentHandller
             if (get_image_result.Status == "Success")
             {
                 result = JSONObject.Parse(get_image_result.Value);
-            }                        
+            }    
+            else
+            {
+                Points.loadingUi.SetActive(true);
+                Points.loadingUi.transform.Find("ResultMessage").GetComponent<RTLTMPro.RTLTextMeshPro>().text = "داده ای برای ویرایش وجود ندارد!";
+            }
             
             return result;
         }
