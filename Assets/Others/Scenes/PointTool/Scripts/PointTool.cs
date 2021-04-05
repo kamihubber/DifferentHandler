@@ -11,7 +11,7 @@ using Random = System.Random;
 
 public class PointTool : MonoBehaviour
 {
-    [Header("Image")] private string hostUrl = "https://golsaar.ir/5_diffrences";
+    [Header("Image")] private string hostUrl = "https://find-differences.ir/5_diffrences";
     private string name = "";
     public string url = "/image/";    
     public string filename = "";

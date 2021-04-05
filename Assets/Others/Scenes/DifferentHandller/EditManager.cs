@@ -21,7 +21,7 @@ namespace Assets.Others.Scenes.DifferentHandller
     {
 
         //download zip file
-        private string imageHostUrl = "https://golsaar.ir/5_diffrences";
+        private string imageHostUrl = "https://find-differences.ir/5_diffrences";
         private string jsonZipUrl = "https://golsaar.ir/5_diffrences/jsons.zip";
         private string jsonDirectory = "";
         private string jsonZipPath = "";
