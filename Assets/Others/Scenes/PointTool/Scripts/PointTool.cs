@@ -339,12 +339,18 @@ public class PointTool : MonoBehaviour
     {
         try
         {
+            //destroy existing points
+            foreach (Transform child in transform)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
+
             //base json to edit
             editJsn = Json;
 
             //add tags            
             JSONArray _tags = Json.GetValue("image_tags").Array; 
-            //tags.Clear();
+            tags.Clear();
             foreach(JSONValue jv in _tags)
             {
                 tags.Add(jv.Str);
