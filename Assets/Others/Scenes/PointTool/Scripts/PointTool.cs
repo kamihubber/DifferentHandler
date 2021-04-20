@@ -443,7 +443,12 @@ public class PointTool : MonoBehaviour
         }
         catch(Exception e)
         {
-            var s = "";
+            Debug.Log(e.Message);
+            Debug.Log(e.StackTrace);
+            if (e.InnerException != null)
+            {
+                Debug.Log(e.InnerException.Message);
+            }
         }
 
     }
