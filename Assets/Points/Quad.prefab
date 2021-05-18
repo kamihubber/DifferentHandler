@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cff52d49cd78fd448d4af650ddac215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 3787
+  id: 6682
   type: quad
   scaleX: 1
   scaleY: 1
