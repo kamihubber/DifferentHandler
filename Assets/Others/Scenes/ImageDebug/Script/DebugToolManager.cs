@@ -14,6 +14,7 @@ using Assets.Helpers;
 using GolbaharSandBoxApiClient;
 using System.Threading.Tasks;
 using static GolbaharSandBoxApiClient.ImageEdit;
+using UnityEngine.SceneManagement;
 
 public class DebugToolManager : MonoBehaviour
 {
@@ -1032,6 +1033,11 @@ public class DebugToolManager : MonoBehaviour
         if ((value == null) || (value == ""))
             CurrentDiffsCountRequested = -1;
         else CurrentDiffsCountRequested = Convert.ToInt32(value);
+    }
+
+    public async void ReportsPageBTN_Clicked()
+    {
+        SceneManager.LoadSceneAsync("Reports");
     }
 
     public async void SearchBtn_Clicked()
