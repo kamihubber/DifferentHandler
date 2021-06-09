@@ -19,15 +19,59 @@ public class PointParent : MonoBehaviour
     [Range(0, 359)] public int rotation = 0;
 
 
-    [Header("properties")] [Range(1, 10)] public int Difficulty = 1;
+    public int Difficulty
+    {
+        get
+        {
+            return BaseDifficulty + ExtraDifficulty;
+        }
+        set
+        {
+            difficulty = value;
+            BaseDifficulty = (difficulty > 10) ? 10 : difficulty;
+            ExtraDifficulty = (difficulty > 10) ? (difficulty - 10) : 0;
+        }
+    }
+    private int difficulty;    
+    [Header("Properties")] [Range(1, 10)] public int BaseDifficulty = 1;
+    [Range(0, 10)] public int ExtraDifficulty = 0;
+
     [Header("Debug")] public Color color = new Color(1, 1, 1, .5f);
 
     public bool showDifficulyLabel = false;
     public Transform difficultyCanvas;
     [HideInInspector] public List<DiffPoint> points = new List<DiffPoint>();
 
+
+    [HideInInspector] public bool HideOtherPoints = true;
+    [Header("Images")]
+    public bool Transparent = true;
+    public DiffPoint PointA;
+    public DiffPoint PointB;
+
+    private void OnDestroy()
+    {
+//#if Unity_Editor
+        //call a method on pointtool(which holds me!) to set overall currentdifficulty label text.
+        //since pointtool currently can not do anything in edit mode
+        if (gameObject.GetComponentInParent<PointTool>() != null)
+            gameObject.GetComponentInParent<PointTool>().set_difficulty_label(1);
+//#endif
+    }
+
+
+
     private void Update()
     {
+
+        if (BaseDifficulty < 10) ExtraDifficulty = 0;
+//#if Unity_Editor
+        //call a method on pointtool(which holds me!) to set overall currentdifficulty label text.
+        //since pointtool currently can not do anything in edit mode
+        if (gameObject.GetComponentInParent<PointTool>() != null)
+            gameObject.GetComponentInParent<PointTool>().set_difficulty_label();
+//#endif
+
         id = Random.Range(1000, 9999);
 
         Vector3 scale = new Vector3(scaleX, scaleY, 1);
@@ -45,7 +89,7 @@ public class PointParent : MonoBehaviour
         points[0].color = color;
         points[1].color = color;
 
-        //difficulty label
+        //difficulty label        
         if (showDifficulyLabel)
         {
             difficultyCanvas.gameObject.SetActive(true);
@@ -118,17 +162,10 @@ public class PointParent : MonoBehaviour
         return result;
     }
 
-    #region ---
-
-    //km
-    [HideInInspector]  public bool HideOtherPoints = true;
-    [Header("images")]    
-    public bool Transparent = true;
-    public DiffPoint PointA;
-    public DiffPoint PointB;
+#region       
 
     void OnValidate()
-    {
+    {       
         //Debug.Log("");
         if (gameObject.GetComponentInParent<PointTool>() != null)
             HideOtherPoints = gameObject.GetComponentInParent<PointTool>().HideOthers;

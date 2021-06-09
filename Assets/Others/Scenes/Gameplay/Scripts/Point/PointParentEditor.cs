@@ -21,7 +21,7 @@ namespace Assets.Others.Scenes.Gameplay.Scripts.Point
 
         private void OnEnable()
         {            
-            m_difficulty = this.serializedObject.FindProperty("Difficulty");
+            m_difficulty = this.serializedObject.FindProperty("BaseDifficulty");
         }
 
 
@@ -38,7 +38,7 @@ namespace Assets.Others.Scenes.Gameplay.Scripts.Point
             //buttons
             EditorGUILayout.Space(20);
 
-            GUILayout.Label("Difficulty");
+            GUILayout.Label("Base Difficulty");
 
             EditorGUI.indentLevel += 10;
 
@@ -63,6 +63,28 @@ namespace Assets.Others.Scenes.Gameplay.Scripts.Point
             }            
 
             GUILayout.EndHorizontal();
+
+            //GUILayout.BeginHorizontal();
+
+            //for (var i = 11; i <= 15; i++)
+            //{
+            //    if (GUILayout.Button(i.ToString(), GUILayout.Width(25), GUILayout.Height(25)))
+            //        m_difficulty.intValue = i;
+            //    //target_parentpoint.Difficulty = i;
+            //}
+
+            //GUILayout.EndHorizontal();
+
+            //GUILayout.BeginHorizontal();
+
+            //for (var i = 16; i <= 20; i++)
+            //{
+            //    if (GUILayout.Button(i.ToString(), GUILayout.Width(25), GUILayout.Height(25)))
+            //        m_difficulty.intValue = i;
+            //    //target_parentpoint.Difficulty = i;
+            //}
+
+            //GUILayout.EndHorizontal();
 
             EditorGUI.indentLevel -= 10;
 

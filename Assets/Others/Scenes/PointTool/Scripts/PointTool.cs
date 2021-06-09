@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Boomlagoon.JSON;
-using GolbaharApiClient;
+using GolbaharSandBoxApiClient;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 using Random = System.Random;
 
 public class PointTool : MonoBehaviour
@@ -23,7 +24,15 @@ public class PointTool : MonoBehaviour
     [Header("Ui")] public SpriteRenderer image;
     public GameObject saveUi;
     public GameObject loadingUi;
-    public GameObject CurrentModeLabel;
+    public Text CurrentModeLabel;
+    public Text CurrentDifficultyLabel;
+    string previousimagename;
+    string previousfiletype;
+    string previousurl;
+    JSONObject editJsn;
+
+    [Header("Points")]
+    public bool HideOthers = true;
 
 
     private List<PointParent> Points = new List<PointParent>();
@@ -275,14 +284,8 @@ public class PointTool : MonoBehaviour
 #endif
     }
 
-    #region km
-    string previousimagename;
-    string previousfiletype;
-    string previousurl;
-    JSONObject editJsn;
-
-    [Header("Points")]
-    public bool HideOthers = true;
+    
+    
 
     //set hideothers property of point children when it changes in editor
     void OnValidate()
@@ -297,13 +300,36 @@ public class PointTool : MonoBehaviour
         //Debug.Log("");
 
         if (edit)
-            CurrentModeLabel.GetComponent<RTLTMPro.RTLTextMeshPro>().text = "حالت : ویرایش";
+            CurrentModeLabel.text = Fa.faConvert("حالت : ویرایش");
         else
-            CurrentModeLabel.GetComponent<RTLTMPro.RTLTextMeshPro>().text = "حالت : جدید";
+            CurrentModeLabel.text = Fa.faConvert("حالت : جدید");
+    }
+
+    public void set_difficulty_label(params int[] destroyvalue )
+    {
+        int currentdifficulty = 0;
+
+        var _points = new List<PointParent>();
+        _points.Clear();
+        _points.AddRange(FindObjectsOfType<PointParent>());
+
+        foreach (PointParent point in _points)
+        {
+            currentdifficulty += point.Difficulty;
+        }
+
+        if (currentdifficulty > 100) CurrentDifficultyLabel.color = Color.red;
+        else CurrentDifficultyLabel.color = Color.white;
+
+        if (destroyvalue.Length <= 0)
+          CurrentDifficultyLabel.text = Fa.faConvert("میزان سختی : " + currentdifficulty.ToString() + "/100");
+        else CurrentDifficultyLabel.text = "";
     }
 
     private void Update()
-    {        
+    {
+        //set_difficulty_label();
+
         if (image.sprite != null)
         {
             if (image.sprite.name != previousimagename)
@@ -475,5 +501,5 @@ public class PointTool : MonoBehaviour
         //Debug.Log(s + " > " + new Vector3(float.Parse(temp[0]), float.Parse(temp[1]), float.Parse(temp[2])));
         return result;
     }
-    #endregion
+    
 }
